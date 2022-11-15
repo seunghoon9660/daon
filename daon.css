@@ -1,0 +1,63 @@
+header{
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:10;
+}
+.header-main-logo{
+    border-bottom:3px solid #af8570;
+}
+.interior-list{
+    display:flex;
+    /* width:1250px; */
+    margin: 20px 100px 100px 100px;
+    justify-content:space-between;
+    justify-content:center;
+}
+.interior-ul{
+    overflow:visible;
+    display:flex;
+    position:relative;
+    transition-property:transform;
+    box-sizing:content-box;
+    list-style:none;
+
+    /* Carousel 구동 */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+.interior-ul::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+/* carousel 스크롤 바 만들기 */
+.interior-ul::-webkit-scrollbar-thumb{
+    background: #af8570;
+    border-radius: 10px;
+}
+.interior-ul::-webkit-scrollbar-track{
+    background: transparent;
+}
+.pic{
+    transition: all 0.4s linear;
+}
+.pic:hover{
+    transform: scale(1.1);
+}
+.main-title{
+    width:1400px;
+    /* line-height:44px; */
+    padding:0 0 6px 0;
+    border-bottom: 1px solid #af8570;
+    margin: auto;
+    position: relative;
+    font-size: 29px;
+    font-weight: 600;
+    box-sizing:border-box;
+}
+.section{
+    /* width:1250px; */
+    margin: 100px;
+}
